@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AniFinder</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="">
+    <div class="flex mx-auto justify-center bg-green-50 mb-4 ml-2">
+      <h2 class="text-center mt-2 font-semibold text-2xl">
+        FIND ANIME USING SCREEN SHOTS
+      </h2>
+    </div>
+    <div class="text-center bg-slate-400">
+      <input type="file" id="fileInput" accept="image/*" />
+      <button onclick="uploadImage()">Upload and Search</button>
+    </div>
+    <div
+      id="output"
+      class="flex flex-wrap flex-row space-x-1 bg-green-300 justify-center gap-2"
+    ></div>
+    <script src="script.js"></script>
+  </body>
+</html>
